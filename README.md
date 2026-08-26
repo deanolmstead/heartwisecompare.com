@@ -9,7 +9,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `ex-factor-2-0-vs-text-chemistry-relationship-programs/index.html` — breakup/texting comparison draft
 - `mend-the-marriage-vs-beat-the-breakup-relationship-guides/index.html` — marriage/breakup comparison draft
 - `images/relationship-programs-comparison.webp` / `.png` — reference image assets
-- `images/clickbank-couple-park.webp` — expanded comparison hero asset with a distinct adult couple
+- `images/clickbank-couple-cafe.webp` — expanded comparison hero asset with a cohesive, distinct adult couple
 
 These ClickBank-derived relationship pages belong to this repository and are **not part of the `worthadding.com` repository or its physical-product comparison pipeline**. The reusable generator is maintained separately at `../reusable-comparison-site-generator`.
 
