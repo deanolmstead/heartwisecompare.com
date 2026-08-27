@@ -8,6 +8,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `clickbank-his-secret-obsession-vs-devotion-system/index.html` — expanded comparison draft
 - `ex-factor-2-0-vs-text-chemistry-relationship-programs/index.html` — breakup/texting comparison draft
 - `mend-the-marriage-vs-beat-the-breakup-relationship-guides/index.html` — marriage/breakup comparison draft
+- `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` — intimacy/relationship communication comparison
 - `images/relationship-programs-comparison.webp` / `.png` — reference image assets
 - `images/clickbank-couple-cafe.webp` — expanded comparison hero asset with a cohesive, distinct adult couple
 
@@ -22,10 +23,10 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 
 ## Current status
 
-- All four relationship comparison pages remain `noindex` drafts/reference material.
-- The pages use direct seller-page links while affiliate tracking details are being confirmed.
+- The public Heartwise Compare pages are indexable editorial comparisons with visible disclosures.
+- Product CTAs use verified tracked destinations; official seller pages remain listed as editorial sources.
 - No dummy checkout credentials, newsletter credentials, or Worth Adding analytics are included.
-- The public identity is currently provisional (`Pair & Practice` on the newer drafts); the expanded His Secret Obsession draft still contains inherited Worth Adding canonical/author metadata and must not be published until normalized.
+- The new women-focused comparison is locally built and should pass deterministic/browser QA before it is published.
 
 ## Local preview
 

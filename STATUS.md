@@ -2,8 +2,8 @@
 
 ## Current State
 
-- **Project Root:** `/Users/deanolmstead/Documents/Playground/relationship-program-comparison`
-- **Status:** In progress; Heartwise Compare homepage is now an editorial comparison index
+- **Project Root:** `/Users/deanolmstead/Documents/Playground/heartwisecompare.com`
+- **Status:** In progress; a new women-focused relationship-guide comparison is built locally and awaiting QA/publish
 - **Kanban Board:** `clickbank-comparison`
 - **Primary Hermes Project:** `relationship-program-comparison`
 
@@ -28,7 +28,9 @@
 - [x] Browser-checked all three comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
 - [x] Pushed the all-comparisons affiliate-link update to `deanolmstead/heartwisecompare.com` as commit `e8ca875` and verified the public pages after propagation.
 - [x] Kept these comparisons as standalone pages within the dedicated Heartwise Compare public site.
-- [x] Added a crawlability baseline with `robots.txt` and a five-URL canonical `sitemap.xml`, excluding the legacy redirect.
+- [x] Added a crawlability baseline with `robots.txt` and a six-URL canonical `sitemap.xml`, excluding the legacy redirect.
+- [x] Built `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` with an original couple hero image, situation-first verdict, comparison table, sources, FAQ, and tracked product CTAs.
+- [x] Added the new comparison to the homepage latest-pages list and sitemap.
 
 ## Repository Boundaries
 
@@ -36,7 +38,7 @@
 - `../reusable-comparison-site-generator` — generic static comparison generator and validation infrastructure.
 - This repository — ClickBank-derived relationship-program comparison drafts and reference material.
 
-## Deployment State (2026-08-25)
+## Deployment State (2026-08-27)
 
 - **Public site repository:** `deanolmstead/heartwisecompare.com`
 - **Pages source:** `main` / root; legacy GitHub Pages build is built.
