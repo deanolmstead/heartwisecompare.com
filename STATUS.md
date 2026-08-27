@@ -21,10 +21,12 @@
 - [x] Browser-checked the homepage at desktop and 390px mobile widths; theme toggle and image loading verified.
 - [x] Published the homepage update to `deanolmstead/heartwisecompare.com` and verified the live routes.
 - [x] Replaced the ClickBank comparison hero still-life with an original adult-couple cafe image using cohesive, complementary styling; the other comparison pages retain different image subjects/scenes.
-- [ ] Confirm the public brand and final domain before changing any page from `noindex`.
-- [ ] Normalize inherited Worth Adding canonical/author metadata on the expanded His Secret Obsession draft after the public identity is approved.
-- [ ] Recheck current seller format, refund, support, and affiliate-link terms.
-- [ ] Browser-check desktop and mobile output for every comparison page.
+- [x] Confirmed the public Heartwise Compare brand and final domain; canonical public pages now use `index,follow` after explicit launch approval.
+- [x] Normalized author, canonical, Open Graph, breadcrumb, and freshness metadata on the expanded His Secret Obsession comparison.
+- [x] Rechecked current seller presentation, refund language, ClickBank offer metadata, direct-tracking availability, and generated-link redirects for all six represented offers.
+- [x] Published approved product-specific affiliate links on all three comparison pages; every product CTA is tracked and direct source citations remain official product URLs.
+- [x] Browser-checked all three comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
+- [x] Pushed the all-comparisons affiliate-link update to `deanolmstead/heartwisecompare.com` as commit `e8ca875` and verified the public pages after propagation.
 - [x] Kept these comparisons as standalone pages within the dedicated Heartwise Compare public site.
 
 ## Repository Boundaries
@@ -37,11 +39,11 @@
 
 - **Public site repository:** `deanolmstead/heartwisecompare.com`
 - **Pages source:** `main` / root; legacy GitHub Pages build is built.
-- **Custom domain:** `heartwisecompare.com`; the deployed artifact remains `noindex,follow`.
+- **Custom domain:** `heartwisecompare.com`; canonical public pages use `index,follow`; the legacy HSO slug is retained only as a `noindex` redirect.
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; homepage update is ready for publish verification.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all three comparison pages use product-specific affiliate links and commission disclosures, with the canonical public pages indexable after the approved launch SEO update.
 
 ## Homepage Design System
 
@@ -51,4 +53,4 @@
 - **Structure:** Editorial intro, featured comparison spread, vertical recent-comparison list, and a three-point “details first” methodology section.
 - **Interaction:** Sticky frosted header, scroll progress, eager local images, and persistent light/dark toggle using `heartwise-theme`.
 - **Image rotation:** Comparison pages use distinct couple styling/appearance rather than reusing one couple across every hero; ClickBank uses a cafe-street scene with a cohesive, complementary couple.
-- **Safety:** Root homepage remains `noindex,follow`; no affiliate tracking links or signup integrations were added.
+- **Safety:** Canonical public pages are indexable; the legacy HSO URL is a `noindex` redirect; product links are disclosed; no signup integrations were added.
