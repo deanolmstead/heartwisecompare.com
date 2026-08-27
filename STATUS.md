@@ -28,6 +28,7 @@
 - [x] Browser-checked all three comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
 - [x] Pushed the all-comparisons affiliate-link update to `deanolmstead/heartwisecompare.com` as commit `e8ca875` and verified the public pages after propagation.
 - [x] Kept these comparisons as standalone pages within the dedicated Heartwise Compare public site.
+- [x] Added a crawlability baseline with `robots.txt` and a five-URL canonical `sitemap.xml`, excluding the legacy redirect.
 
 ## Repository Boundaries
 
@@ -43,7 +44,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all three comparison pages use product-specific affiliate links and commission disclosures, with the canonical public pages indexable after the approved launch SEO update.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all three comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed.
 
 ## Homepage Design System
 
@@ -53,4 +54,4 @@
 - **Structure:** Editorial intro, featured comparison spread, vertical recent-comparison list, and a three-point “details first” methodology section.
 - **Interaction:** Sticky frosted header, scroll progress, eager local images, and persistent light/dark toggle using `heartwise-theme`.
 - **Image rotation:** Comparison pages use distinct couple styling/appearance rather than reusing one couple across every hero; ClickBank uses a cafe-street scene with a cohesive, complementary couple.
-- **Safety:** Canonical public pages are indexable; the legacy HSO URL is a `noindex` redirect; product links are disclosed; no signup integrations were added.
+- **Safety:** Canonical public pages are indexable; the legacy HSO URL is a `noindex` redirect; product links are disclosed; `sitemap.xml` excludes the legacy route; no signup integrations were added.
