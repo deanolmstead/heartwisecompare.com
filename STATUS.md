@@ -3,7 +3,7 @@
 ## Current State
 
 - **Project Root:** `/Users/deanolmstead/Documents/Playground/heartwisecompare.com`
-- **Status:** In progress; a new women-focused relationship-guide comparison is built locally and awaiting QA/publish
+- **Status:** In progress; the women-focused relationship-guide comparison is published and live verification is complete
 - **Kanban Board:** `clickbank-comparison`
 - **Primary Hermes Project:** `relationship-program-comparison`
 
@@ -25,7 +25,7 @@
 - [x] Normalized author, canonical, Open Graph, breadcrumb, and freshness metadata on the expanded His Secret Obsession comparison.
 - [x] Rechecked current seller presentation, refund language, ClickBank offer metadata, direct-tracking availability, and generated-link redirects for all six represented offers.
 - [x] Published approved product-specific affiliate links on all three comparison pages; every product CTA is tracked and direct source citations remain official product URLs.
-- [x] Browser-checked all three comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
+- [x] Browser-checked all four comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
 - [x] Pushed the all-comparisons affiliate-link update to `deanolmstead/heartwisecompare.com` as commit `e8ca875` and verified the public pages after propagation.
 - [x] Kept these comparisons as standalone pages within the dedicated Heartwise Compare public site.
 - [x] Added a crawlability baseline with `robots.txt` and a six-URL canonical `sitemap.xml`, excluding the legacy redirect.
@@ -46,7 +46,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all three comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all four comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new women-focused page and hero asset returned HTTP 200 after the `e4f740e` Pages deployment.
 
 ## Homepage Design System
 
