@@ -9,6 +9,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `ex-factor-2-0-vs-text-chemistry-relationship-programs/index.html` — breakup/texting comparison draft
 - `mend-the-marriage-vs-beat-the-breakup-relationship-guides/index.html` — marriage/breakup comparison draft
 - `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` — intimacy/relationship communication comparison
+- `inside-the-male-mind-vs-carlos-cavallo-womens-dating-relationships/index.html` — women-focused dating-guide comparison
 - `images/relationship-programs-comparison.webp` / `.png` — reference image assets
 - `images/clickbank-couple-cafe.webp` — expanded comparison hero asset with a cohesive, distinct adult couple
 
@@ -26,7 +27,7 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 - The public Heartwise Compare pages are indexable editorial comparisons with visible disclosures.
 - Product CTAs use verified tracked destinations; official seller pages remain listed as editorial sources.
 - No dummy checkout credentials, newsletter credentials, or Worth Adding analytics are included.
-- The new women-focused comparison is locally built and should pass deterministic/browser QA before it is published.
+- The new women-focused dating-guide comparison is published from `main`, linked on the homepage, and included in the sitemap.
 
 ## Local preview
 
