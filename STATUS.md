@@ -3,7 +3,7 @@
 ## Current State
 
 - **Project Root:** `/Users/deanolmstead/Documents/Playground/heartwisecompare.com`
-- **Status:** In progress; the women-focused relationship-guide comparison is published and live verification is complete
+- **Status:** In progress; the latest relationship-guide comparison is built and awaiting public deployment verification
 - **Kanban Board:** `clickbank-comparison`
 - **Primary Hermes Project:** `relationship-program-comparison`
 
@@ -28,9 +28,11 @@
 - [x] Browser-checked all four comparison pages at desktop and 390px mobile widths; product links, disclosures, image loading, no horizontal overflow, and `index,follow` verified.
 - [x] Pushed the all-comparisons affiliate-link update to `deanolmstead/heartwisecompare.com` as commit `e8ca875` and verified the public pages after propagation.
 - [x] Kept these comparisons as standalone pages within the dedicated Heartwise Compare public site.
-- [x] Added a crawlability baseline with `robots.txt` and a six-URL canonical `sitemap.xml`, excluding the legacy redirect.
+- [x] Added a crawlability baseline with `robots.txt` and a canonical `sitemap.xml`, excluding the legacy redirect.
 - [x] Built `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` with an original couple hero image, situation-first verdict, comparison table, sources, FAQ, and tracked product CTAs.
 - [x] Added the new comparison to the homepage latest-pages list and sitemap.
+- [x] Built `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` with an original couple hero image, package-clarity verdict, comparison table, sources, FAQ, and tracked product CTAs.
+- [x] Browser-checked the new comparison at desktop and 390px mobile widths; image loading, no horizontal overflow, theme toggle, internal anchors, JSON-LD, and inline JavaScript passed.
 
 ## Repository Boundaries
 
@@ -46,7 +48,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all four comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new women-focused page and hero asset returned HTTP 200 after the `e4f740e` Pages deployment.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all six comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The latest comparison page and hero asset are awaiting post-push HTTP verification.
 
 ## Homepage Design System
 
