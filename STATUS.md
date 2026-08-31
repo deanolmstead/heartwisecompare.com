@@ -3,7 +3,7 @@
 ## Current State
 
 - **Project Root:** `/Users/deanolmstead/Documents/Playground/heartwisecompare.com`
-- **Status:** In progress; the latest relationship-guide comparison is published and live verification is complete
+- **Status:** In progress; a new relationship-guide comparison is built and awaiting deployment verification
 - **Kanban Board:** `clickbank-comparison`
 - **Primary Hermes Project:** `relationship-program-comparison`
 
@@ -33,6 +33,8 @@
 - [x] Added the new comparison to the homepage latest-pages list and sitemap.
 - [x] Built `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` with an original couple hero image, package-clarity verdict, comparison table, sources, FAQ, and tracked product CTAs.
 - [x] Browser-checked the new comparison at desktop and 390px mobile widths; image loading, no horizontal overflow, theme toggle, internal anchors, JSON-LD, and inline JavaScript passed.
+- [x] Built `language-of-desire-vs-devotion-system-relationship-guides/index.html` with a new original couple hero image, intimacy-versus-package verdict, comparison table, sources, FAQ, and tracked product CTAs.
+- [x] Added the Language of Desire vs The Devotion System comparison to the homepage latest-pages list and sitemap.
 
 ## Repository Boundaries
 
@@ -48,7 +50,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; all six comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The latest comparison page, homepage link, sitemap entry, and hero asset returned HTTP 200 after the 8c43ee3 Pages deployment.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the existing comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new comparison page and hero asset still need post-push HTTP verification.
 
 ## Homepage Design System
 
