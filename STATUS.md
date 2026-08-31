@@ -35,6 +35,7 @@
 - [x] Browser-checked the new comparison at desktop and 390px mobile widths; image loading, no horizontal overflow, theme toggle, internal anchors, JSON-LD, and inline JavaScript passed.
 - [x] Built `language-of-desire-vs-devotion-system-relationship-guides/index.html` with a new original couple hero image, intimacy-versus-package verdict, comparison table, sources, FAQ, and tracked product CTAs.
 - [x] Added the Language of Desire vs The Devotion System comparison to the homepage latest-pages list and sitemap.
+- [x] Published and publicly verified the matching Pinterest Pin on the Heartwise Compare board: `https://www.pinterest.com/pin/381820874681554561/`.
 
 ## Repository Boundaries
 
