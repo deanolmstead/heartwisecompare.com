@@ -3,7 +3,7 @@
 ## Current State
 
 - **Project Root:** `/Users/deanolmstead/Documents/Playground/heartwisecompare.com`
-- **Status:** In progress; a new relationship-guide comparison is built and awaiting deployment verification
+- **Status:** In progress; the latest relationship-guide comparison is published and live verification is complete
 - **Kanban Board:** `clickbank-comparison`
 - **Primary Hermes Project:** `relationship-program-comparison`
 
@@ -50,7 +50,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the existing comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new comparison page and hero asset still need post-push HTTP verification.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new comparison page, hero asset, homepage link, and sitemap entry returned HTTP 200 after the 5d97065 Pages deployment.
 
 ## Homepage Design System
 
