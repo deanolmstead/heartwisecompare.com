@@ -30,7 +30,7 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 - The public Heartwise Compare pages are indexable editorial comparisons with visible disclosures.
 - Product CTAs use verified tracked destinations; official seller pages remain listed as editorial sources.
 - No dummy checkout credentials, newsletter credentials, or Worth Adding analytics are included.
-- The latest Ex Factor 2.0 vs Beat the Breakup comparison is ready for publication from `main`, linked on the homepage, and included in the sitemap.
+- The latest Ex Factor 2.0 vs Beat the Breakup comparison is published from `main`, linked on the homepage, and included in the sitemap.
 
 ## Local preview
 
