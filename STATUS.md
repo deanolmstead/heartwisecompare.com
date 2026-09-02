@@ -38,6 +38,7 @@
 - [x] Published and publicly verified the matching Pinterest Pin on the Heartwise Compare board: `https://www.pinterest.com/pin/381820874681554561/`.
 - [x] Built `ex-factor-2-0-vs-beat-the-breakup-relationship-guides/index.html` as a same-creator, opposite-goals breakup comparison with current package details, visible prices, original imagery, source links, FAQs, and tracked product CTAs.
 - [x] Browser-checked, published, and publicly verified the Ex Factor 2.0 vs Beat the Breakup comparison, homepage entry, image, and sitemap URL.
+- [x] Rebuilt the sitewide internal-link graph with concise product-specific anchors, topical related-comparison sections on every indexable comparison, and a complete comparison library on the About page; validated every target and mobile layout.
 
 ## Repository Boundaries
 
