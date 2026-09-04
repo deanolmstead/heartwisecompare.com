@@ -39,6 +39,8 @@
 - [x] Built `ex-factor-2-0-vs-beat-the-breakup-relationship-guides/index.html` as a same-creator, opposite-goals breakup comparison with current package details, visible prices, original imagery, source links, FAQs, and tracked product CTAs.
 - [x] Browser-checked, published, and publicly verified the Ex Factor 2.0 vs Beat the Breakup comparison, homepage entry, image, and sitemap URL.
 - [x] Rebuilt the sitewide internal-link graph with concise product-specific anchors, topical related-comparison sections on every indexable comparison, and a complete comparison library on the About page; validated every target and mobile layout.
+- [x] Added The Forever Woman vs The Obsession Method as a new comparison using two offers not represented on the site, with an original hero asset, official-source citations, audience-first verdict, FAQ, homepage entry, and sitemap entry.
+- [x] Kept the new page on direct official seller URLs only; no new account-specific affiliate link was guessed or activated.
 
 ## Repository Boundaries
 

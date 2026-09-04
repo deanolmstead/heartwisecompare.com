@@ -9,6 +9,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `ex-factor-2-0-vs-text-chemistry-relationship-programs/index.html` — breakup/texting comparison draft
 - `mend-the-marriage-vs-beat-the-breakup-relationship-guides/index.html` — marriage/breakup comparison draft
 - `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` — intimacy/relationship communication comparison
+- `forever-woman-vs-obsession-method-relationship-guides/index.html` — women-focused commitment guide vs men-focused attraction guide
 - `inside-the-male-mind-vs-carlos-cavallo-womens-dating-relationships/index.html` — women-focused dating-guide comparison
 - `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` — package-clarity/relationship communication comparison
 - `language-of-desire-vs-devotion-system-relationship-guides/index.html` — intimacy-focus/multimedia-package comparison
@@ -31,6 +32,7 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 - Product CTAs use verified tracked destinations; official seller pages remain listed as editorial sources.
 - No dummy checkout credentials, newsletter credentials, or Worth Adding analytics are included.
 - The latest Ex Factor 2.0 vs Beat the Breakup comparison is published from `main`, linked on the homepage, and included in the sitemap.
+- The Forever Woman vs The Obsession Method comparison is the latest local addition; its buttons currently use official seller URLs only, with no account-specific affiliate links.
 
 ## Local preview
 
