@@ -41,6 +41,7 @@
 - [x] Rebuilt the sitewide internal-link graph with concise product-specific anchors, topical related-comparison sections on every indexable comparison, and a complete comparison library on the About page; validated every target and mobile layout.
 - [x] Added The Forever Woman vs The Obsession Method as a new comparison using two offers not represented on the site, with an original hero asset, official-source citations, audience-first verdict, FAQ, homepage entry, and sitemap entry.
 - [x] Kept the new page on direct official seller URLs only; no new account-specific affiliate link was guessed or activated.
+- [x] Added Relationship Rewrite vs Avoidant Recovery using two previously unused offers, authenticated ClickBank HopLinks, an original hero asset, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry; locally browser-verified at desktop/mobile widths with both HopLinks resolving to the intended seller pages.
 
 ## Repository Boundaries
 

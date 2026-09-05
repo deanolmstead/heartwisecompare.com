@@ -10,6 +10,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `mend-the-marriage-vs-beat-the-breakup-relationship-guides/index.html` — marriage/breakup comparison draft
 - `women-relationship-books-language-of-desire-vs-make-him-worship-you/index.html` — intimacy/relationship communication comparison
 - `forever-woman-vs-obsession-method-relationship-guides/index.html` — women-focused commitment guide vs men-focused attraction guide
+- `relationship-rewrite-vs-avoidant-recovery-relationship-guides/index.html` — reconnection-oriented method vs avoidant-relationship recovery program
 - `inside-the-male-mind-vs-carlos-cavallo-womens-dating-relationships/index.html` — women-focused dating-guide comparison
 - `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` — package-clarity/relationship communication comparison
 - `language-of-desire-vs-devotion-system-relationship-guides/index.html` — intimacy-focus/multimedia-package comparison
