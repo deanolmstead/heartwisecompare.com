@@ -42,6 +42,9 @@
 - [x] Added The Forever Woman vs The Obsession Method as a new comparison using two offers not represented on the site, with an original hero asset, official-source citations, audience-first verdict, FAQ, homepage entry, and sitemap entry.
 - [x] Kept the new page on direct official seller URLs only; no new account-specific affiliate link was guessed or activated.
 - [x] Added Relationship Rewrite vs Avoidant Recovery using two previously unused offers, authenticated ClickBank HopLinks, an original hero asset, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry; locally browser-verified at desktop/mobile widths with both HopLinks resolving to the intended seller pages.
+- [x] Added Save The Marriage System vs That's Not How Men Work with authenticated `northnote` HopLinks, an original hero asset, current seller-page and checkout evidence, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry.
+- [x] Browser-checked the new comparison live at desktop and 390px mobile widths; image loading, no horizontal overflow, tracked links, disclosures, and canonical metadata verified.
+- [x] Published commit `3236043` and verified the new page, hero asset, homepage entry, and sitemap entry after the GitHub Pages build.
 
 ## Repository Boundaries
 
@@ -49,7 +52,7 @@
 - `../reusable-comparison-site-generator` — generic static comparison generator and validation infrastructure.
 - This repository — ClickBank-derived relationship-program comparison drafts and reference material.
 
-## Deployment State (2026-08-27)
+## Deployment State (2026-09-06)
 
 - **Public site repository:** `deanolmstead/heartwisecompare.com`
 - **Pages source:** `main` / root; legacy GitHub Pages build is built.
@@ -57,7 +60,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The new comparison page, hero asset, homepage link, and sitemap entry returned HTTP 200 after the 5d97065 Pages deployment.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The Save The Marriage System vs That's Not How Men Work page, hero asset, homepage link, and sitemap entry returned HTTP 200 after the `3236043` Pages deployment.
 
 ## Homepage Design System
 
