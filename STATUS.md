@@ -45,6 +45,8 @@
 - [x] Added Save The Marriage System vs That's Not How Men Work with authenticated `northnote` HopLinks, an original hero asset, current seller-page and checkout evidence, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry.
 - [x] Browser-checked the new comparison live at desktop and 390px mobile widths; image loading, no horizontal overflow, tracked links, disclosures, and canonical metadata verified.
 - [x] Published commit `3236043` and verified the new page, hero asset, homepage entry, and sitemap entry after the GitHub Pages build.
+- [x] Audited the live internal-link graph: all 11 indexable comparisons are linked from the homepage and About library, every comparison has at least three related links, and the new comparison now has six inbound sources after reciprocal topical links were added.
+- [x] Published commit `45d4582` and re-crawled all 13 sitemap URLs; every route returned HTTP 200 and no broken sitemap-internal links were found.
 
 ## Repository Boundaries
 
@@ -60,7 +62,7 @@
 - **Registrar:** Porkbun; nameservers changed to Cloudflare's assigned `gabe.ns.cloudflare.com` and `lara.ns.cloudflare.com`.
 - **Cloudflare web records:** apex A records use GitHub Pages' four documented IPs; `www` points to `deanolmstead.github.io`; obsolete wildcard parking record removed.
 - **Preserved email records:** Porkbun MX, SPF, and ACME TXT records were read back unchanged.
-- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The Save The Marriage System vs That's Not How Men Work page, hero asset, homepage link, and sitemap entry returned HTTP 200 after the `3236043` Pages deployment.
+- **Current deployment:** GitHub Pages serves `heartwisecompare.com` over HTTPS with the custom domain configured; the comparison pages use product-specific affiliate links and commission disclosures, canonical public pages are indexable, and `robots.txt`/`sitemap.xml` are deployed. The Save The Marriage System vs That's Not How Men Work page, hero asset, homepage link, sitemap entry, and reciprocal related links returned HTTP 200 after the `45d4582` Pages deployment.
 
 ## Homepage Design System
 
