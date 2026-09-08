@@ -12,6 +12,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `forever-woman-vs-obsession-method-relationship-guides/index.html` — women-focused commitment guide vs men-focused attraction guide
 - `relationship-rewrite-vs-avoidant-recovery-relationship-guides/index.html` — reconnection-oriented method vs avoidant-relationship recovery program
 - `save-the-marriage-vs-thats-not-how-men-work-relationship-guides/index.html` — marriage-repair system vs dating-and-relationship guide
+- `300-creative-dates-vs-modern-relationships-for-women/index.html` — practical date-ideas collection vs standards-and-boundaries course
 - `inside-the-male-mind-vs-carlos-cavallo-womens-dating-relationships/index.html` — women-focused dating-guide comparison
 - `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` — package-clarity/relationship communication comparison
 - `language-of-desire-vs-devotion-system-relationship-guides/index.html` — intimacy-focus/multimedia-package comparison
@@ -34,6 +35,7 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 - Product CTAs use verified tracked destinations; official seller pages remain listed as editorial sources.
 - No dummy checkout credentials, newsletter credentials, or Worth Adding analytics are included.
 - The Save The Marriage System vs That's Not How Men Work comparison is published from `main`, linked on the homepage, and included in the sitemap, with verified account-specific product links and official seller-page sources.
+- The 300 Creative Dates vs Modern Relationships for Women comparison is prepared with verified account-specific product links, official seller-page sources, and a page-specific hero asset.
 - The Forever Woman vs The Obsession Method comparison uses official seller URLs only, with no account-specific affiliate links.
 
 ## Local preview

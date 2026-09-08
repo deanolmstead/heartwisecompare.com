@@ -43,6 +43,7 @@
 - [x] Kept the new page on direct official seller URLs only; no new account-specific affiliate link was guessed or activated.
 - [x] Added Relationship Rewrite vs Avoidant Recovery using two previously unused offers, authenticated ClickBank HopLinks, an original hero asset, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry; locally browser-verified at desktop/mobile widths with both HopLinks resolving to the intended seller pages.
 - [x] Added Save The Marriage System vs That's Not How Men Work with authenticated `northnote` HopLinks, an original hero asset, current seller-page and checkout evidence, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry.
+- [x] Added 300 Creative Dates vs Modern Relationships for Women with authenticated `northnote` HopLinks, an original hero asset, current seller-page evidence, situation-first verdict, official-source citations, FAQ, homepage entry, and sitemap entry.
 - [x] Browser-checked the new comparison live at desktop and 390px mobile widths; image loading, no horizontal overflow, tracked links, disclosures, and canonical metadata verified.
 - [x] Published commit `3236043` and verified the new page, hero asset, homepage entry, and sitemap entry after the GitHub Pages build.
 - [x] Audited the live internal-link graph: all 11 indexable comparisons are linked from the homepage and About library, every comparison has at least three related links, and the new comparison now has six inbound sources after reciprocal topical links were added.
