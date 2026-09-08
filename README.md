@@ -22,6 +22,10 @@ Standalone working repo for comparing online relationship programs and other dig
 
 These ClickBank-derived relationship pages belong to this repository and are **not part of the `worthadding.com` repository or its physical-product comparison pipeline**. The reusable generator is maintained separately at `../reusable-comparison-site-generator`.
 
+## Comparison-page template
+
+`comparison-template.css` is the canonical shared visual contract for every indexable comparison route. New pages must link it after page-specific styles and inherit its navigation, 1120px content shell, Inter/Georgia typography, OKLCH palette, hero grid, rounded cards, source strip, table overflow treatment, and responsive mobile header. The homepage and About page retain their separate site-level layouts; `clickbank-his-secret-obsession-vs-devotion-system/` remains a noindex redirect.
+
 ## Hermes Agent field guide
 
 - `hermes-agent-guide/index.html` — standalone interactive digital guide based on the current verified Hermes setup.
