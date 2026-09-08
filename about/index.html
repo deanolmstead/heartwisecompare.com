@@ -34,7 +34,8 @@
     .nav-inner, .page-shell { width: var(--content); margin: 0 auto; }
     .nav-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 850; text-decoration: none; white-space: nowrap; }
-    .brand-mark { color: var(--accent); font-size: 19px; }
+    .brand-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; border: 1px solid color-mix(in srgb, var(--accent) 54%, var(--line)); border-radius: 50%; color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+    .brand-mark svg { width: 15px; height: 15px; }
     .nav-links { display: flex; gap: 20px; color: var(--muted); font-size: .92rem; }
     .nav-links a { text-decoration: none; }
     .nav-links a:hover { color: var(--text); }
@@ -84,7 +85,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="nav"><div class="nav-inner"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">♥</span><span>Heartwise Compare</span></a><nav class="nav-links" aria-label="Main navigation"><a href="../#recent">Comparisons</a><a href="../#how-we-compare">How we compare</a><a href="../about/" aria-current="page">About</a></nav></div></header>
+<header class="nav"><div class="nav-inner"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.7c0 5.2-8.8 10.2-8.8 10.2S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4Z"/></svg></span><span>Heartwise Compare</span></a><nav class="nav-links" aria-label="Main navigation"><a href="../#recent">Comparisons</a><a href="../#how-we-compare">How we compare</a><a href="../about/" aria-current="page">About</a></nav></div></header>
   <main id="main"><div class="page-shell">
     <div class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true"> / </span><span>About Heartwise Compare</span></div>
     <header><div class="eyebrow">The editorial desk</div><h1>Clear comparisons, with the limits stated plainly.</h1><p class="lead">Heartwise Compare helps readers compare online relationship guides by looking at what the seller actually lists: format, stated focus, access language, refund terms, and fit for a particular situation.</p><p class="byline">Written by <strong>Jordan Wells</strong>, editorial reviewer · Updated <time datetime="2026-09-02">September 2, 2026</time></p></header>

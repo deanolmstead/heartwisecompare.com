@@ -107,8 +107,9 @@ button { font: inherit; }
 .site-header .nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .nav-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--text) !important; font-weight: 850; text-decoration: none; white-space: nowrap; }
-.brand-mark, .mark { display: inline-grid; place-items: center; width: 24px; height: 24px; color: var(--accent); flex: none; }
-.brand-mark svg { width: 22px; height: 22px; }
+.brand-mark, .mark { display: inline-grid; place-items: center; width: 28px; height: 28px; color: var(--accent); flex: none; }
+.brand-mark { border: 1px solid color-mix(in srgb, var(--accent) 54%, var(--line)); border-radius: 50%; background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.brand-mark svg { width: 15px; height: 15px; }
 .links, .nav-links { display: flex; align-items: center; gap: 20px; color: var(--muted); font-size: .94rem; }
 .nav-right { display: flex; align-items: center; gap: 20px; }
 .links a, .nav-links a { text-decoration: none; }
