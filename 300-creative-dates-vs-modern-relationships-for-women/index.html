@@ -31,7 +31,7 @@
       catch (error) { document.documentElement.dataset.theme = 'light'; }
     })();
   </script>
-  <style>
+  <style media="not all">
     :root {
       color-scheme: light;
       --paper: #fbf7f2;
@@ -214,7 +214,7 @@
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
   </style>
-  <style id="comparison-template-alignment">
+  <style id="comparison-template-alignment" media="not all">
     /* Keep every comparison route on the established editorial template. */
     :root{color-scheme:light;--bg:oklch(98% .006 82);--surface:oklch(96% .008 82);--surface-2:oklch(92% .012 82);--text:oklch(22% .018 62);--muted:oklch(43% .018 62);--muted-2:oklch(54% .02 62);--line:oklch(84% .014 82);--accent:oklch(55% .13 12);--accent-strong:oklch(39% .13 12);--warm:oklch(62% .12 72);--good:oklch(52% .11 145);--shadow:0 20px 56px oklch(30% .04 62 / .12);--shadow-hover:0 25px 70px oklch(30% .04 62 / .18);--radius:12px;--radius-lg:22px;--content:min(1120px,calc(100vw - 32px));--max:var(--content);--paper:var(--bg);--paper-deep:var(--surface-2);--panel:var(--surface);--ink:var(--text);--quiet:var(--muted-2);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     html[data-theme=dark]{color-scheme:dark;--bg:oklch(18% .011 62);--surface:oklch(22% .012 62);--surface-2:oklch(27% .014 62);--text:oklch(92% .008 82);--muted:oklch(72% .011 82);--muted-2:oklch(62% .014 82);--line:oklch(34% .014 62);--accent:oklch(72% .12 18);--accent-strong:oklch(80% .11 18);--warm:oklch(70% .1 42);--good:oklch(68% .1 145);--shadow:0 22px 70px oklch(6% .01 62 / .42);--shadow-hover:0 28px 82px oklch(6% .01 62 / .52);--paper:var(--bg);--paper-deep:var(--surface-2);--panel:var(--surface);--ink:var(--text);--quiet:var(--muted-2)}
