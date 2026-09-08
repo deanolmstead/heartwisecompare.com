@@ -13,6 +13,7 @@ Standalone working repo for comparing online relationship programs and other dig
 - `relationship-rewrite-vs-avoidant-recovery-relationship-guides/index.html` — reconnection-oriented method vs avoidant-relationship recovery program
 - `save-the-marriage-vs-thats-not-how-men-work-relationship-guides/index.html` — marriage-repair system vs dating-and-relationship guide
 - `300-creative-dates-vs-modern-relationships-for-women/index.html` — practical date-ideas collection vs standards-and-boundaries course
+- `woman-men-adore-vs-infatuation-scripts/index.html` — women-focused five-module framework vs multimedia script package, with recurring-offer checks
 - `inside-the-male-mind-vs-carlos-cavallo-womens-dating-relationships/index.html` — women-focused dating-guide comparison
 - `devotion-system-vs-make-him-worship-you-relationship-guides/index.html` — package-clarity/relationship communication comparison
 - `language-of-desire-vs-devotion-system-relationship-guides/index.html` — intimacy-focus/multimedia-package comparison
