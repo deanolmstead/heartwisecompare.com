@@ -135,6 +135,19 @@ class PageFactoryTests(unittest.TestCase):
         self.assertIn('https://heartwisecompare.com/alpha-vs-beta/', html)
         self.assertIn('"@type": "FAQPage"', html)
 
+    def test_shared_stylesheet_keeps_check_markers_with_their_text(self):
+        root = Path(__file__).resolve().parents[1]
+        css = (root / "comparison-template.css").read_text(encoding="utf-8")
+        self.assertRegex(css, r"\.check-item\s*\{[^}]*display:\s*grid")
+        self.assertRegex(css, r"\.check-item\s*\{[^}]*grid-template-columns:\s*[^;]*")
+        self.assertRegex(css, r"\.check-item p\s*\{[^}]*margin:\s*0")
+
+    def test_shared_stylesheet_spaces_factory_faq_items(self):
+        root = Path(__file__).resolve().parents[1]
+        css = (root / "comparison-template.css").read_text(encoding="utf-8")
+        self.assertRegex(css, r"\.faq-list\s*\{[^}]*display:\s*grid")
+        self.assertRegex(css, r"\.faq-list\s*\{[^}]*gap:\s*10px")
+
     def test_build_updates_every_discovery_surface_and_is_idempotent(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
