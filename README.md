@@ -27,6 +27,37 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 
 `comparison-template.css` is the canonical shared visual contract for every indexable comparison route. New pages must link it after page-specific styles and inherit its navigation, 1120px content shell, Inter/Georgia typography, OKLCH palette, hero grid, rounded cards, source strip, table overflow treatment, and responsive mobile header. The homepage and About page retain their separate site-level layouts; `clickbank-his-secret-obsession-vs-devotion-system/` remains a noindex redirect.
 
+## Page factory and quality checks
+
+New comparisons are represented as structured JSON in `data/comparisons/`. Build one comparison and synchronize its homepage row, homepage schema entry, About-page card, sitemap URL, and reciprocal related links with:
+
+```bash
+python3 scripts/build_comparison.py data/comparisons/<comparison>.json
+```
+
+Verify generated output is current without changing files:
+
+```bash
+python3 scripts/build_comparison.py data/comparisons/<comparison>.json --check
+```
+
+Run the permanent site audit and unit suite before deployment:
+
+```bash
+python3 scripts/audit_site.py --min-inbound 2
+python3 -m unittest discover -s tests -v
+```
+
+The auditor checks every indexable page for canonical/title/description/H1 structure, valid JSON-LD, safe affiliate-link attributes, local links/assets, exact sitemap coverage, and at least two independent inbound internal links per comparison. `.github/workflows/quality.yml` runs the same checks for pull requests and pushes to `main`.
+
+For a read-only women-focused ClickBank shortlist from Dean's authenticated CDP profile:
+
+```bash
+python3 scripts/clickbank_research.py --query women --audience women --output /tmp/heartwise-clickbank-shortlist.json
+```
+
+The helper excludes products already present on Heartwise, mixed/men's audiences, approval-required offers, and categories outside Dating Guides or Marriage & Relationships. Account-specific link generation is opt-in via `--generate-link`, requires an explicit affiliate nickname, and writes the full URL only to a caller-selected private file.
+
 ## Hermes Agent field guide
 
 - `hermes-agent-guide/index.html` — standalone interactive digital guide based on the current verified Hermes setup.

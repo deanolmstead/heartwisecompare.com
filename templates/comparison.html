@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$SEO_TITLE</title>
+  <meta name="description" content="$DESCRIPTION">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="$CANONICAL">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Heartwise Compare">
+  <meta property="og:title" content="$SEO_TITLE">
+  <meta property="og:description" content="$DESCRIPTION">
+  <meta property="og:url" content="$CANONICAL">
+  <meta property="og:image" content="$OG_IMAGE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../favicon.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../comparison-template.css?v=factory-1">
+$SCHEMAS
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav-wrap">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.7c0 5.2-8.8 10.2-8.8 10.2S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4Z"/></svg></span><span>Heartwise Compare</span></a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="../#recent">Comparisons</a><a href="../#how-we-compare">How we compare</a><a href="../about/">About</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"><span aria-hidden="true">◐</span><span class="toggle-label">Dark</span></button></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-shell">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../#recent">Comparisons</a><span aria-hidden="true">/</span><span>$TITLE</span></nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <div class="eyebrow">$EYEBROW</div>
+          <h1 id="page-title">$H1</h1>
+          <p class="dek">$DEK</p>
+          <p class="byline">Written by <strong>Jordan Wells</strong> · Published <time datetime="$PUBLISHED">$PUBLISHED_DISPLAY</time> · Updated <time datetime="$MODIFIED">$MODIFIED_DISPLAY</time></p>
+          <div class="hero-actions">$HERO_ACTIONS</div>
+          <p class="microcopy">Affiliate disclosure: product buttons use tracked links. Heartwise Compare may earn a commission at no extra cost to you.</p>
+        </div>
+        <figure class="hero-media"><img src="$HERO_IMAGE" alt="$HERO_ALT" width="1672" height="941"><figcaption>Choose by format, transparency, and fit—not by promised romantic outcomes.</figcaption></figure>
+      </section>
+
+      <div class="source-strip"><div><strong>Sources checked</strong><span>Official seller presentations, order pages, and current ClickBank destinations</span></div><div><strong>Research date</strong><span>$MODIFIED_DISPLAY</span></div><div><strong>Editorial standard</strong><span>Seller claims separated from verifiable package details</span></div></div>
+
+      <section class="section verdict-panel" aria-labelledby="verdict-title"><div class="kicker">The short answer</div><h2 id="verdict-title">Choose the learning format—not a promised reaction.</h2><p class="lede">$VERDICT</p></section>
+
+      <section class="section" aria-labelledby="decision-title"><div class="section-head"><div><div class="kicker">Decision guide</div><h2 id="decision-title">Start with your situation.</h2></div><p class="section-desc">These products organize relationship advice differently. Neither can guarantee another person’s attention, consent, or commitment.</p></div><div class="card-grid">$DECISION_CARDS</div></section>
+
+      <section class="section" aria-labelledby="compare-title"><div class="section-head"><div><div class="kicker">Side-by-side</div><h2 id="compare-title">The buyer details visible today.</h2></div><p class="section-desc">Recheck the final order form before paying because prices, bonuses, and subscriptions can change.</p></div><div class="table-wrap"><table><thead><tr><th scope="col">Detail</th>$PRODUCT_HEADERS</tr></thead><tbody>$COMPARISON_ROWS</tbody></table></div></section>
+
+      <section class="section" aria-labelledby="packages-title"><div class="section-head"><div><div class="kicker">Package details</div><h2 id="packages-title">Two different presentation styles.</h2></div><p class="section-desc">Concrete materials matter more than the emotional promises surrounding them.</p></div><div class="product-grid">$PRODUCT_CARDS</div></section>
+
+      <aside class="section safety-note" aria-labelledby="limits-title"><div><div class="kicker">A necessary limit</div><h2 id="limits-title">A relationship guide has hard limits.</h2></div><p>Neither package can guarantee attraction, commitment, reconciliation, or a particular response. Scripts should never replace honest communication, respect for boundaries, or professional support when safety, coercion, abuse, or serious distress is involved.</p></aside>
+
+      <section class="section" aria-labelledby="checks-title"><div class="section-head"><div><div class="kicker">Before you buy</div><h2 id="checks-title">Confirm these checkout details.</h2></div><p class="section-desc">The most important fine print is often on the final order page.</p></div><div class="checklist">$BUYER_CHECKS</div></section>
+
+      <section class="section" aria-labelledby="sources-title"><div class="section-head"><div><div class="kicker">Primary evidence</div><h2 id="sources-title">Start with the official pages.</h2></div><p class="section-desc">Use seller pages to confirm the current package and checkout—not as independent proof of results.</p></div><div class="product-grid">$SOURCE_CARDS</div></section>
+
+      <section class="section" aria-labelledby="related-title"><div class="section-head"><div><div class="kicker">Related women’s guides</div><h2 id="related-title">Compare nearby options.</h2></div><p class="section-desc">These pages examine similar women-focused relationship products.</p></div><div class="card-grid">$RELATED_CARDS</div></section>
+
+      <section class="section" aria-labelledby="faq-title"><div class="section-head"><div><div class="kicker">Frequently asked</div><h2 id="faq-title">Questions worth answering plainly.</h2></div></div><div class="faq-list">$FAQS</div></section>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><p><strong>Heartwise Compare</strong> · Independent, source-led comparisons.</p><p><a href="../about/">About</a> · <a href="../#how-we-compare">How we compare</a> · <a href="../#recent">All comparisons</a></p></div></footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const button = document.getElementById('theme-toggle');
+      const label = button.querySelector('.toggle-label');
+      const saved = localStorage.getItem('heartwise-theme');
+      const initial = saved === 'dark' ? 'dark' : 'light';
+      const apply = (theme) => {
+        root.dataset.theme = theme;
+        label.textContent = theme === 'dark' ? 'Light' : 'Dark';
+        button.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+      };
+      apply(initial);
+      button.addEventListener('click', () => {
+        const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('heartwise-theme', next);
+        apply(next);
+      });
+    })();
+  </script>
+</body>
+</html>

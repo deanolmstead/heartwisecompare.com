@@ -47,6 +47,8 @@
 - [x] Re-aligned 300 Creative Dates vs Modern Relationships for Women to the established comparison-page template, including shared nav, hero grid, typography, palette, card geometry, and responsive behavior.
 - [x] Added `comparison-template.css` as the shared visual contract and attached it to all 12 indexable comparison routes; legacy nav/layout aliases and mobile overflow behavior were normalized and browser-verified at 390px and 1440px.
 - [x] Added The Woman Men Adore vs Infatuation Scripts using two previously unused women-focused ClickBank offers, authenticated `northnote` HopLinks, an original hero image, verified prices and optional recurring checkout terms, source-led limitations, homepage/About discovery, reciprocal topical links, and a complete sitemap entry.
+- [x] Added the Heartwise page factory: structured comparison JSON now renders the canonical comparison template and idempotently synchronizes homepage ordering/schema, About discovery, sitemap coverage, and reciprocal related links.
+- [x] Added a permanent stdlib-only SEO auditor, 13-test regression suite, GitHub Actions quality gate, and authenticated ClickBank shortlist/link helper with women-only/category/approval/existing-product filters.
 - [x] Reordered the homepage comparison feed into strict descending publication-date order, including correcting the older August 27 Ex Factor vs Text Chemistry row.
 - [x] Browser-checked the new comparison live at desktop and 390px mobile widths; image loading, no horizontal overflow, tracked links, disclosures, and canonical metadata verified.
 - [x] Published commit `3236043` and verified the new page, hero asset, homepage entry, and sitemap entry after the GitHub Pages build.

@@ -1,0 +1,27 @@
+name: Heartwise quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify generated pages have no drift
+        run: |
+          for comparison in data/comparisons/*.json; do
+            python scripts/build_comparison.py "$comparison" --check
+          done
+      - name: Audit SEO, sitemap, links, and affiliate attributes
+        run: python scripts/audit_site.py --min-inbound 2
