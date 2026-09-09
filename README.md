@@ -25,7 +25,7 @@ These ClickBank-derived relationship pages belong to this repository and are **n
 
 ## Comparison-page template
 
-`comparison-template.css` is the canonical shared visual contract for every indexable comparison route. New pages must link it after page-specific styles and inherit its navigation, 1120px content shell, Inter/Georgia typography, OKLCH palette, hero grid, rounded cards, source strip, table overflow treatment, and responsive mobile header. The homepage and About page retain their separate site-level layouts; `clickbank-his-secret-obsession-vs-devotion-system/` remains a noindex redirect.
+`comparison-template.css` is the canonical shared visual contract for every indexable comparison route. New pages must link it after page-specific styles and inherit its navigation, 1120px content shell, Bodoni Moda/Manrope typography, OKLCH palette, hero grid, rounded cards, source strip, table overflow treatment, CTA spacing, FAQ accordion, contained footer, and responsive mobile header. Read [`HEARTWISE_COMPARISON_TEMPLATE_RULES.md`](HEARTWISE_COMPARISON_TEMPLATE_RULES.md) before editing a comparison route. The homepage and About page retain their separate site-level layouts; `clickbank-his-secret-obsession-vs-devotion-system/` remains a noindex redirect.
 
 ## Page factory and quality checks
 

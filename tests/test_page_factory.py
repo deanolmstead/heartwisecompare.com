@@ -134,6 +134,8 @@ class PageFactoryTests(unittest.TestCase):
         self.assertIn('rel="sponsored nofollow noopener noreferrer"', html)
         self.assertIn('https://heartwisecompare.com/alpha-vs-beta/', html)
         self.assertIn('"@type": "FAQPage"', html)
+        self.assertNotIn("$47", html)
+        self.assertNotIn("Listed price", html)
 
     def test_shared_stylesheet_keeps_check_markers_with_their_text(self):
         root = Path(__file__).resolve().parents[1]

@@ -17,11 +17,12 @@
   <link rel="icon" type="image/png" href="../favicon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../comparison-template.css?v=factory-2">
 $SCHEMAS
 </head>
 <body>
+  <div class="progress" aria-hidden="true"><span></span></div>
   <header class="topbar">
     <div class="nav-wrap">
       <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.7c0 5.2-8.8 10.2-8.8 10.2S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4Z"/></svg></span><span>Heartwise Compare</span></a>
@@ -49,9 +50,9 @@ $SCHEMAS
 
       <section class="section verdict-panel" aria-labelledby="verdict-title"><div class="kicker">The short answer</div><h2 id="verdict-title">Choose the learning format—not a promised reaction.</h2><p class="lede">$VERDICT</p></section>
 
-      <section class="section" aria-labelledby="decision-title"><div class="section-head"><div><div class="kicker">Decision guide</div><h2 id="decision-title">Start with your situation.</h2></div><p class="section-desc">These products organize relationship advice differently. Neither can guarantee another person’s attention, consent, or commitment.</p></div><div class="card-grid">$DECISION_CARDS</div></section>
+      <section class="section" aria-labelledby="decision-title"><div class="section-head"><div><div class="kicker">Decision guide</div><h2 id="decision-title">Start with your situation.</h2></div><p class="section-desc">These products organize relationship advice differently. Neither can guarantee another person’s attention, consent, or commitment.</p></div><div class="card-grid decision-grid">$DECISION_CARDS</div><div class="cta-row"><div><strong>Ready to inspect an offer?</strong><span>Open the seller pages and confirm the current package before checkout.</span></div><div class="cta-actions">$PRODUCT_ACTIONS</div></div></section>
 
-      <section class="section" aria-labelledby="compare-title"><div class="section-head"><div><div class="kicker">Side-by-side</div><h2 id="compare-title">The buyer details visible today.</h2></div><p class="section-desc">Recheck the final order form before paying because prices, bonuses, and subscriptions can change.</p></div><div class="table-wrap"><table><thead><tr><th scope="col">Detail</th>$PRODUCT_HEADERS</tr></thead><tbody>$COMPARISON_ROWS</tbody></table></div></section>
+      <section class="section" aria-labelledby="compare-title"><div class="section-head"><div><div class="kicker">Side-by-side</div><h2 id="compare-title">The buyer details visible today.</h2></div><p class="section-desc">Recheck the final order form before paying because package details, bonuses, and subscriptions can change.</p></div><div class="table-wrap"><table><thead><tr><th scope="col">Detail</th>$PRODUCT_HEADERS</tr></thead><tbody>$COMPARISON_ROWS</tbody></table></div><div class="table-cta"><span>Compare the live offers before you decide.</span><div class="cta-actions">$PRODUCT_ACTIONS</div></div></section>
 
       <section class="section" aria-labelledby="packages-title"><div class="section-head"><div><div class="kicker">Package details</div><h2 id="packages-title">Two different presentation styles.</h2></div><p class="section-desc">Concrete materials matter more than the emotional promises surrounding them.</p></div><div class="product-grid">$PRODUCT_CARDS</div></section>
 
@@ -63,11 +64,13 @@ $SCHEMAS
 
       <section class="section" aria-labelledby="related-title"><div class="section-head"><div><div class="kicker">Related women’s guides</div><h2 id="related-title">Compare nearby options.</h2></div><p class="section-desc">These pages examine similar women-focused relationship products.</p></div><div class="card-grid">$RELATED_CARDS</div></section>
 
-      <section class="section" aria-labelledby="faq-title"><div class="section-head"><div><div class="kicker">Frequently asked</div><h2 id="faq-title">Questions worth answering plainly.</h2></div></div><div class="faq-list">$FAQS</div></section>
+      <section class="section final-cta" aria-labelledby="final-cta-title"><div><div class="kicker">Before you buy</div><h2 id="final-cta-title">Open the offers with the details in view.</h2><p>Use the seller pages to confirm the current package, recurring terms, and refund language. Choose the format that fits how you learn, not the promise of a guaranteed reaction.</p></div><div class="cta-actions">$PRODUCT_ACTIONS</div></section>
+
+      <section class="section" aria-labelledby="faq-title"><div class="section-head"><div><div class="kicker">Frequently asked</div><h2 id="faq-title">Questions worth answering plainly.</h2></div><p class="section-desc">A few direct answers before you open either offer, including format, recurring terms, and the limits of relationship advice.</p></div><div class="faq-list">$FAQS</div></section>
     </div>
   </main>
 
-  <footer class="footer"><div class="footer-inner"><p><strong>Heartwise Compare</strong> · Independent, source-led comparisons.</p><p><a href="../about/">About</a> · <a href="../#how-we-compare">How we compare</a> · <a href="../#recent">All comparisons</a></p></div></footer>
+  <footer class="footer"><div class="page-shell footer-inner"><p><strong>Heartwise Compare</strong> · Independent, source-led comparisons.</p><p><a href="../about/">About</a> · <a href="../#how-we-compare">How we compare</a> · <a href="../#recent">All comparisons</a></p></div></footer>
 
   <script>
     (function () {
@@ -87,6 +90,14 @@ $SCHEMAS
         localStorage.setItem('heartwise-theme', next);
         apply(next);
       });
+
+      const progress = document.querySelector('.progress span');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = `$${scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0}%`;
+      };
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
     })();
   </script>
 </body>

@@ -19,7 +19,7 @@ REQUIRED_TOP_LEVEL = {
     "decision_cards", "buyer_checks", "faqs", "related",
 }
 REQUIRED_PRODUCT = {
-    "name", "creator", "price", "format", "best_for", "checkout", "guarantee",
+    "name", "creator", "format", "best_for", "checkout", "guarantee",
     "affiliate_url", "official_url", "official_label", "summary", "features", "limits",
 }
 
@@ -106,13 +106,17 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
         for product in data["products"]
     )
+    product_actions = "".join(
+        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Review {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
+        for product in data["products"]
+    )
     decision_cards = "".join(
-        f'<article class="card"><h3>{esc(item["title"])}</h3><p>{esc(item["body"])}</p></article>'
+        f'<article class="card decision-card"><h3>{esc(item["title"])}</h3><p>{esc(item["body"])}</p></article>'
         for item in data["decision_cards"]
     )
     product_headers = "".join(f'<th scope="col">{esc(product["name"])}</th>' for product in data["products"])
     rows = [
-        ("Listed price", "price"), ("Format", "format"), ("Best fit", "best_for"),
+        ("Format", "format"), ("Best fit", "best_for"),
         ("Checkout note", "checkout"), ("Refund language", "guarantee"),
     ]
     comparison_rows = "".join(
@@ -122,7 +126,7 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
     product_cards = "".join(render_product_card(product) for product in data["products"])
     buyer_checks = "".join(f'<div class="check-item"><span aria-hidden="true">✓</span><p>{esc(item)}</p></div>' for item in data["buyer_checks"])
     source_cards = "".join(
-        f'<article class="product-card"><div><div class="kicker">{esc(product["name"])}</div><h3>{esc(product["official_label"])}</h3><p>Confirm the current package, price, and checkout terms directly with the seller.</p></div><a class="button secondary" href="{esc(product["official_url"])}" target="_blank" rel="noopener noreferrer">Open official source <span aria-hidden="true">↗</span></a></article>'
+        f'<article class="product-card"><div><div class="kicker">{esc(product["name"])}</div><h3>{esc(product["official_label"])}</h3><p>Confirm the current package and checkout terms directly with the seller.</p></div><a class="button secondary" href="{esc(product["official_url"])}" target="_blank" rel="noopener noreferrer">Open official source <span aria-hidden="true">↗</span></a></article>'
         for product in data["products"]
     )
     related_cards = "".join(
@@ -130,8 +134,8 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         for item in data["related"]
     )
     faqs = "".join(
-        f'<details class="faq-item"><summary>{esc(item["question"])}<span aria-hidden="true">+</span></summary><div class="faq-body"><p>{esc(item["answer"])}</p></div></details>'
-        for item in data["faqs"]
+        f'<details class="faq-item"{" open" if index == 0 else ""}><summary>{esc(item["question"])}</summary><div class="faq-body"><p>{esc(item["answer"])}</p></div></details>'
+        for index, item in enumerate(data["faqs"])
     )
     values = {
         "SEO_TITLE": esc(data["seo_title"]), "DESCRIPTION": esc(data["description"]), "CANONICAL": canonical,
@@ -140,7 +144,7 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         "TITLE": esc(data["title"]), "EYEBROW": esc(data["eyebrow"]), "H1": esc(data["h1"]), "DEK": esc(data["dek"]),
         "PUBLISHED": esc(data["published"]), "PUBLISHED_DISPLAY": display_date(data["published"]),
         "MODIFIED": esc(data["modified"]), "MODIFIED_DISPLAY": display_date(data["modified"]),
-        "HERO_ACTIONS": hero_actions, "HERO_IMAGE": esc(data["hero_image"]), "HERO_ALT": esc(data["hero_alt"]),
+        "HERO_ACTIONS": hero_actions, "PRODUCT_ACTIONS": product_actions, "HERO_IMAGE": esc(data["hero_image"]), "HERO_ALT": esc(data["hero_alt"]),
         "VERDICT": esc(data["verdict"]), "DECISION_CARDS": decision_cards, "PRODUCT_HEADERS": product_headers,
         "COMPARISON_ROWS": comparison_rows, "PRODUCT_CARDS": product_cards, "BUYER_CHECKS": buyer_checks,
         "SOURCE_CARDS": source_cards, "RELATED_CARDS": related_cards, "FAQS": faqs,
@@ -156,7 +160,7 @@ def render_product_card(product: Mapping[str, Any]) -> str:
         f'<article class="product-card"><div><div class="kicker">{esc(product["format"])}</div><h3>{esc(product["name"])}</h3>'
         f'<p>{esc(product["summary"])}</p><p><strong>By:</strong> {esc(product["creator"])}</p>'
         f'<h4>What the seller lists</h4><ul>{features}</ul><h4>Limits to keep in view</h4><ul>{limits}</ul></div>'
-        f'<div class="product-meta"><strong>{esc(product["price"])}</strong><span>{esc(product["checkout"])}</span></div>'
+        f'<div class="product-meta"><span>{esc(product["checkout"])}</span></div>'
         f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a></article>'
     )
 
