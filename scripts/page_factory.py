@@ -209,8 +209,12 @@ def _upsert_home_row(home: str, data: Mapping[str, Any]) -> str:
     target = f'{data["slug"]}/'
     rows = [row for row in rows if not re.search(rf'href=["\'](?:\./)?{re.escape(target)}["\']', row)]
     row = (
-        f'<a class="post-row" href="{esc(data["slug"])}/"><div><time datetime="{esc(data["published"])}">{display_date(data["published"])}</time>'
-        f'<h3>{esc(data["title"])}</h3><p>{esc(data["description"])}</p></div><span>Read comparison →</span></a>'
+        f'<a class="post-row" href="{esc(data["slug"])}/">'
+        f'<div class="post-thumb"><img src="{esc(data["slug"])}/{esc(data["hero_image"])}" alt="{esc(data["hero_alt"])}" loading="eager"></div>'
+        f'<div class="post-copy"><div class="post-kicker">{esc(data["eyebrow"])}</div>'
+        f'<h3>{esc(data["title"])}</h3><p>{esc(data["description"])}</p>'
+        f'<span class="text-link">Read comparison <span aria-hidden="true">→</span></span></div>'
+        f'<time class="post-date" datetime="{esc(data["published"])}">{display_date(data["published"])}</time></a>'
     )
     rows.append(row)
 
