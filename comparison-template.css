@@ -399,10 +399,11 @@ details { border: 1px solid var(--line); border-radius: var(--radius-lg); backgr
 @media (max-width: 620px) {
   :root { --content: min(100% - 24px, 1160px); }
   .nav, .nav-inner, .nav-wrap { min-height: 64px; }
-  .nav-links, .links { gap: 12px; font-size: .78rem; }
+  .nav-wrap { gap: 8px; }
+  .nav-links, .links { gap: 10px; font-size: .78rem; }
   .nav-links a:nth-child(n+2), .links a:nth-child(n+2) { display: none; }
   .nav-actions > .button, .actions > .button { display: none !important; }
-  .nav-right { gap: 12px; }
+  .nav-right { gap: 8px; }
   .nav-right .nav-menu-toggle { display: none !important; }
   .hero h1 { font-size: clamp(2.55rem, 13vw, 4rem) !important; }
   .hero { padding-top: 42px !important; }
