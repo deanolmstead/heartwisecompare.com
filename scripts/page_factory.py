@@ -186,10 +186,10 @@ def _replace_website_schema(home: str, data: Mapping[str, Any]) -> str:
         )
         parts = [part for part in payload.get("hasPart", []) if part.get("url") != entry["url"]]
         parts.insert(0, entry)
-        payload["hasPart"] = (
-            sorted(parts, key=lambda item: item.get("datePublished", ""), reverse=True)
-            if schema_type == "WebSite"
-            else parts
+        payload["hasPart"] = sorted(
+            parts,
+            key=lambda item: (item.get("datePublished", ""), item.get("url", "")),
+            reverse=True,
         )
         replacement = match.group(1) + "\n" + json.dumps(payload, indent=2, ensure_ascii=False) + "\n" + match.group(3)
         return home[:match.start()] + replacement + home[match.end():]
@@ -237,7 +237,12 @@ def _upsert_about(about: str, data: Mapping[str, Any]) -> str:
     cards = card_pattern.findall(grid_match.group(2))
     needle = f'../{data["slug"]}/'
     cards = [card for card in cards if needle not in card]
-    cards.insert(0, f'<article class="card"><h3><a href="{needle}">{esc(data["title"])}</a></h3><p>{esc(data["description"])}</p></article>')
+    cards.append(f'<article class="card"><h3><a href="{needle}">{esc(data["title"])}</a></h3><p>{esc(data["description"])}</p></article>')
+    def card_href(card: str) -> str:
+        match = re.search(r'href=["\']([^"\']+)', card)
+        return match.group(1) if match else ""
+
+    cards.sort(key=card_href)
     new_section = section[:grid_match.start(2)] + "".join(cards) + section[grid_match.end(2):]
     return about[:section_match.start()] + new_section + about[section_match.end():]
 
