@@ -401,7 +401,7 @@ details { border: 1px solid var(--line); border-radius: var(--radius-lg); backgr
   .nav, .nav-inner, .nav-wrap { min-height: 64px; }
   .nav-wrap { gap: 8px; }
   .nav-links, .links { gap: 10px; font-size: .78rem; }
-  .nav-links a:nth-child(n+2), .links a:nth-child(n+2) { display: none; }
+  .nav-links a, .links a { display: none; }
   .nav-actions > .button, .actions > .button { display: none !important; }
   .nav-right { gap: 8px; }
   .nav-right .nav-menu-toggle { display: none !important; }
