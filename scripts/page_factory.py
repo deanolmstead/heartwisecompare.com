@@ -222,6 +222,11 @@ def _upsert_home_row(home: str, data: Mapping[str, Any]) -> str:
         match = re.search(r'<time\b[^>]*datetime=["\']([^"\']+)', item)
         return match.group(1) if match else ""
 
+    def row_href(item: str) -> str:
+        match = re.search(r'href=["\']([^"\']+)', item)
+        return match.group(1) if match else ""
+
+    rows.sort(key=row_href)
     rows.sort(key=row_date, reverse=True)
     body = "\n        " + "\n        ".join(rows) + "\n      "
     new_list = list_match.group(1) + body + list_match.group(3)

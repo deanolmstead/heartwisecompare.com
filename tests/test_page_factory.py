@@ -90,7 +90,7 @@ class PageFactoryTests(unittest.TestCase):
             '<html><head><script id="website-schema" type="application/ld+json">'
             + json.dumps(homepage_schema)
             + '</script></head><body><section id="recent"><div class="post-list">'
-            + '<a class="post-row" href="old/"><div><time datetime="2026-09-01">September 1, 2026</time><h3>Old</h3><p>Old page.</p></div></a>'
+            + '<a class="post-row" href="old/"><div><time datetime="2026-09-08">September 8, 2026</time><h3>Old</h3><p>Old page.</p></div></a>'
             + '</div></section></body></html>',
             encoding="utf-8",
         )
