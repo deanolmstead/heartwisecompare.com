@@ -62,11 +62,11 @@ Prices and currency amounts must never appear on the public comparison page.
 - Product links must include `target="_blank"` and `rel="sponsored nofollow noopener noreferrer"`.
 - Source links must include `target="_blank"` and `rel="noopener noreferrer"`.
 - Use `.hero-actions` and `.cta-actions`; preserve their wrapping and `gap` rules so buttons never touch.
-- CTA text should identify the product, such as `Visit The Woman Men Adore` or `Review Infatuation Scripts`.
+- Product CTA text must always start with `Visit` and identify the product, such as `Visit The Woman Men Adore`. Do not use `Review` for CTA labels.
 
 ## Visual contract
 
-- Use the shared warm editorial system: Bodoni Moda display type, Manrope body/interface type, tinted paper neutrals, muted berry accent, and the existing dark-mode tokens.
+- Use the shared warm editorial system: DM Serif Display type, Manrope body/interface type, tinted paper neutrals, muted berry accent, and the existing dark-mode tokens.
 - Reuse the existing `page-shell`, `section`, `section-head`, `product-card`, `table-wrap`, `faq-list`, `final-cta`, and `footer-inner` classes.
 - The hero is a two-column editorial layout on desktop and a single-column stack on smaller screens.
 - Cards and tables use neutral borders, controlled radii, and restrained shadows. Do not introduce colored side stripes, gradient text, glass cards, or generic SaaS panels.

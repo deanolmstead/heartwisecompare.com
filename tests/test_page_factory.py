@@ -134,6 +134,8 @@ class PageFactoryTests(unittest.TestCase):
         self.assertIn('rel="sponsored nofollow noopener noreferrer"', html)
         self.assertIn('https://heartwisecompare.com/alpha-vs-beta/', html)
         self.assertIn('"@type": "FAQPage"', html)
+        self.assertIn(">Visit Alpha", html)
+        self.assertNotIn(">Review ", html)
         self.assertNotIn("$47", html)
         self.assertNotIn("Listed price", html)
 

@@ -107,7 +107,7 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         for product in data["products"]
     )
     product_actions = "".join(
-        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Review {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
+        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
         for product in data["products"]
     )
     decision_cards = "".join(
