@@ -1,0 +1,132 @@
+{
+  "audience": "women",
+  "buyer_checks": [
+    "Confirm the current offer and package details on the final ClickBank order form.",
+    "Check whether any optional upsells or recurring offers are selected before paying.",
+    "Save the receipt and the current refund instructions before the guarantee window passes.",
+    "Choose based on format and fit rather than testimonials or promised emotional reactions."
+  ],
+  "decision_cards": [
+    {
+      "body": "You want a fuller program with video, audio, and written material, and you prefer working through a phased system rather than isolated templates.",
+      "title": "Choose Text Your Ex Back when"
+    },
+    {
+      "body": "You want something compact you can read and apply the same day, and you prefer adapting named templates to your own voice.",
+      "title": "Choose Hook Your Ex when"
+    },
+    {
+      "body": "You are looking for guaranteed reconciliation, a way around another person's boundaries, or support for abuse, coercion, stalking, crisis, or serious distress.",
+      "title": "Pause on both when"
+    }
+  ],
+  "dek": "Text Your Ex Back offers a multimedia texting system from an established relationship publisher. Hook Your Ex packages a newer set of named message templates around hypnosis-influenced techniques. The useful difference is teaching style and package depth—not a promise that either can make an ex return.",
+  "description": "Compare Text Your Ex Back and Hook Your Ex by format, package transparency, checkout terms, practical fit, and relationship-safety limitations.",
+  "eyebrow": "Women-focused breakup recovery guides",
+  "faqs": [
+    {
+      "answer": "Text Your Ex Back is the larger package, with an ebook plus video and audio training modules. Hook Your Ex is positioned as a compact course built around message templates.",
+      "question": "Which program has more material?"
+    },
+    {
+      "answer": "Both offer text versions of their presentations. Text Your Ex Back includes an ebook as part of its core package, while Hook Your Ex publishes a full text version of its pitch.",
+      "question": "Which is better for someone who prefers reading?"
+    },
+    {
+      "answer": "Neither product's core offer was presented as a subscription when reviewed, but always recheck the current order form for preselected upsells or recurring offers before paying.",
+      "question": "Do either of these products include recurring charges?"
+    },
+    {
+      "answer": "No. A messaging guide can organize ideas and examples, but it cannot control another person's feelings, consent, boundaries, or decisions.",
+      "question": "Can either program guarantee my ex will come back?"
+    }
+  ],
+  "h1": "Text Your Ex Back vs Hook Your Ex",
+  "hero_alt": "An adult couple sitting close at a sunlit kitchen table, the woman smiling at a smartphone while the man looks on with a hopeful expression",
+  "hero_image": "images/couple-reconnecting-text-your-ex-back-vs-hook-your-ex.png",
+  "modified": "2026-09-22",
+  "products": [
+    {
+      "affiliate_url": "https://8305bivh7dpdx6em5k881hsi5j.hop.clickbank.net",
+      "best_for": "Women who want a structured, step-by-step texting system in more than one format",
+      "checkout": "No recurring offer was mentioned when reviewed; lifetime access to the online community was described as included.",
+      "creator": "Michael Fiore / Digital Romance, Inc.",
+      "features": [
+        "Hours of video, audio, and ebook training, all digitally delivered",
+        "Specific text-message sequences (such as Across the Room and Text Judo) organized into a phased system",
+        "Separate women's and men's tracks",
+        "Lifetime access to the Text Your Ex Back online community"
+      ],
+      "format": "Digital multimedia program with ebook and video/audio training modules",
+      "guarantee": "Seller states a 60-Day, No Hassle, No-Questions-Asked Satisfaction Guarantee with a full refund.",
+      "limits": [
+        "The seller's best-seller claims and tractor-beam outcome language are marketing, not verifiable outcomes.",
+        "No message sequence can guarantee an ex will respond, return, or reconcile.",
+        "Rebuilding contact after a breakup can reopen conflict; consider whether contact is safe and wanted."
+      ],
+      "name": "Text Your Ex Back",
+      "official_label": "Text Your Ex Back presentation",
+      "official_url": "https://textyourexback.com/women",
+      "summary": "A step-by-step multimedia system of specific text messages designed to rebuild attraction after a breakup, with separate tracks for women and men and lifetime community access."
+    },
+    {
+      "affiliate_url": "https://c87b1k1i5c0d66fd1hz95qfw42.hop.clickbank.net",
+      "best_for": "Women who want a compact set of named message templates to adapt quickly",
+      "checkout": "Seller describes the purchase as a one-time investment; no subscription was mentioned when reviewed.",
+      "creator": "Steve Pratt / Grand JV",
+      "features": [
+        "Named message templates such as Remorse, Re-ignite, and RE-CHARM",
+        "Compact downloadable course designed to be read and applied quickly",
+        "Full text version of the presentation for readers"
+      ],
+      "format": "Digital online course with downloadable message templates",
+      "guarantee": "Seller states a 60-day money-back guarantee.",
+      "limits": [
+        "Claims about triggering dopamine or obsession chemicals are marketing language, not established science.",
+        "Overnight-reconciliation promises should be treated as sales copy, not verifiable outcomes.",
+        "No wording can override another person's boundaries or guarantee a response."
+      ],
+      "name": "Hook Your Ex",
+      "official_label": "Hook Your Ex presentation",
+      "official_url": "https://hookyourex.com/women/",
+      "summary": "A concise digital course built around named message templates, presented as using hypnosis-influenced techniques to prompt an ex to miss you."
+    }
+  ],
+  "published": "2026-09-22",
+  "related": [
+    {
+      "description": "Compare two breakup programs by reconnection method, package depth, and practical fit.",
+      "slug": "ex-factor-2-0-vs-beat-the-breakup-relationship-guides",
+      "title": "Ex Factor 2.0 vs Beat the Breakup"
+    },
+    {
+      "description": "Compare a marriage-repair system with a breakup recovery program.",
+      "slug": "mend-the-marriage-vs-beat-the-breakup-relationship-guides",
+      "title": "Mend the Marriage vs Beat the Breakup"
+    },
+    {
+      "description": "Compare a partner-selection ebook with a post-breakup reconnection system.",
+      "slug": "how-to-find-the-man-of-your-dreams-vs-how-do-i-get-him-back",
+      "title": "How to Find the Man of Your Dreams vs How Do I Get Him Back?"
+    },
+    {
+      "description": "Compare a breakup-recovery program with a texting-focused attraction guide.",
+      "slug": "ex-factor-2-0-vs-text-chemistry-relationship-programs",
+      "title": "Ex Factor 2.0 vs Text Chemistry"
+    },
+    {
+      "description": "Compare a reconnection-oriented method with an avoidant-relationship recovery program.",
+      "slug": "relationship-rewrite-vs-avoidant-recovery-relationship-guides",
+      "title": "Relationship Rewrite vs Avoidant Recovery"
+    },
+    {
+      "description": "Compare a marriage-repair system with a dating-and-relationship guide.",
+      "slug": "save-the-marriage-vs-thats-not-how-men-work-relationship-guides",
+      "title": "Save The Marriage vs That's Not How Men Work"
+    }
+  ],
+  "seo_title": "Text Your Ex Back vs Hook Your Ex | Heartwise Compare",
+  "slug": "text-your-ex-back-vs-hook-your-ex",
+  "title": "Text Your Ex Back vs Hook Your Ex",
+  "verdict": "Start with Text Your Ex Back when you want a structured multi-format program with separate guidance tracks. Choose Hook Your Ex when you want a compact set of ready-to-adapt message templates. Pause on both if the appeal depends on guaranteed reconciliation: no set of texts can override another person's boundaries or decisions."
+}

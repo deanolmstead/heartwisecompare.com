@@ -263,7 +263,8 @@ def _upsert_related(page: str, data: Mapping[str, Any]) -> str:
     if not section_match:
         raise ValueError("related-comparison section not found")
     section = section_match.group(0)
-    grid_match = re.search(r'(<div\b[^>]*class=["\'][^"\']*card-grid[^"\']*["\'][^>]*>)(.*)(</div>\s*</section>)', section, re.I | re.S)
+    # Legacy pages may use the grid2 class, styled identically to card-grid.
+    grid_match = re.search(r'(<div\b[^>]*class=["\'][^"\']*(?:card-grid|grid2)[^"\']*["\'][^>]*>)(.*)(</div>\s*</section>)', section, re.I | re.S)
     if not grid_match:
         raise ValueError("related card grid not found")
     card = f'<article class="card"><h3><a href="../{esc(data["slug"])}/">{esc(data["title"])}</a></h3><p>{esc(data["description"])}</p></article>'
