@@ -103,11 +103,11 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         ],
     }
     hero_actions = "".join(
-        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
+        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">See {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
         for product in data["products"]
     )
     product_actions = "".join(
-        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
+        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">See {esc(product["name"])} <span aria-hidden="true">↗</span></a>'
         for product in data["products"]
     )
     decision_cards = "".join(
@@ -161,7 +161,7 @@ def render_product_card(product: Mapping[str, Any]) -> str:
         f'<p>{esc(product["summary"])}</p><p><strong>By:</strong> {esc(product["creator"])}</p>'
         f'<h4>What the seller lists</h4><ul>{features}</ul><h4>Limits to keep in view</h4><ul>{limits}</ul></div>'
         f'<div class="product-meta"><span>{esc(product["checkout"])}</span></div>'
-        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">Visit {esc(product["name"])} <span aria-hidden="true">↗</span></a></article>'
+        f'<a class="button primary" href="{esc(product["affiliate_url"])}" target="_blank" rel="sponsored nofollow noopener noreferrer">See {esc(product["name"])} <span aria-hidden="true">↗</span></a></article>'
     )
 
 
