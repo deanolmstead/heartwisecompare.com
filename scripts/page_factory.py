@@ -133,6 +133,12 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         f'<article class="card"><h3><a href="../{esc(item["slug"])}/">{esc(item["title"])}</a></h3><p>{esc(item["description"])}</p></article>'
         for item in data["related"]
     )
+    hub = data.get("hub") or {}
+    hub_link = (
+        f'<p class="hub-link">Part of our guide: <a href="../{esc(hub["slug"])}/">{esc(hub["title"])} <span aria-hidden="true">→</span></a></p>'
+        if hub.get("slug") and hub.get("title")
+        else ""
+    )
     faqs = "".join(
         f'<details class="faq-item"{" open" if index == 0 else ""}><summary>{esc(item["question"])}</summary><div class="faq-body"><p>{esc(item["answer"])}</p></div></details>'
         for index, item in enumerate(data["faqs"])
@@ -142,6 +148,7 @@ def render_page(data: Mapping[str, Any], template_path: Path | None = None) -> s
         "OG_IMAGE": f"{BASE_URL}/{esc(data['slug'])}/{esc(data['hero_image'])}",
         "SCHEMAS": "\n".join((json_script(article), json_script(breadcrumb), json_script(faq))),
         "TITLE": esc(data["title"]), "EYEBROW": esc(data["eyebrow"]), "H1": esc(data["h1"]), "DEK": esc(data["dek"]),
+        "HUB_LINK": hub_link,
         "PUBLISHED": esc(data["published"]), "PUBLISHED_DISPLAY": display_date(data["published"]),
         "MODIFIED": esc(data["modified"]), "MODIFIED_DISPLAY": display_date(data["modified"]),
         "HERO_ACTIONS": hero_actions, "PRODUCT_ACTIONS": product_actions, "HERO_IMAGE": esc(data["hero_image"]), "HERO_ALT": esc(data["hero_alt"]),
